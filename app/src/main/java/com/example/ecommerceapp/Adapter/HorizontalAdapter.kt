@@ -1,12 +1,12 @@
 package com.example.ecommerceapp.Adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ecommerceapp.Adapter.HorizontalAdapter.*
+import com.example.ecommerceapp.ItemClicked
 import com.example.ecommerceapp.Model.CateroryModelClass
 import com.example.ecommerceapp.R
 
@@ -30,7 +30,7 @@ class HorizontalAdapter(private val listener: ItemClicked) : RecyclerView.Adapte
 
     override fun onBindViewHolder(holder: Category, position: Int) {
         val currentItem = data[position]
-        holder.tvDetail.text = currentItem.electronics
+        holder.tvDetail.text = currentItem.category
 
     }
 
@@ -44,6 +44,7 @@ class HorizontalAdapter(private val listener: ItemClicked) : RecyclerView.Adapte
     override fun getItemCount() = data.size
 }
 
-interface ItemClicked {
-    fun itemClcikedLisyener(item: CateroryModelClass)
-}
+//interface ItemClicked {
+//    fun itemClcikedLisyener(item: CateroryModelClass)
+//    fun singleitemcClicked(sibgleItem: SingleItemModel)
+//}
