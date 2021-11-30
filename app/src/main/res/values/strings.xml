@@ -4,4 +4,8 @@
     <string name="men_shoes">Men Shoes</string>
     <string name="_50">$50</string>
     <string name="dollarSymbol">$</string>
+    <string name="login">Login</string>
+    <string name="please_enter_password">Enter password</string>
+    <string name="enter_email_here">Enter Email </string>
+    <string name="wellcome_to_online_shopping">Wellcome to Online shopping</string>
 </resources>
