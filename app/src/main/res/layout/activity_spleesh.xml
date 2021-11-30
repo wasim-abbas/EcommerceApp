@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spleeshColor"
+    tools:context=".SpleeshActivity">
+
+    <TextView
+        android:id="@+id/tvwellcome"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingTop="30dp"
+        android:text="@string/wellcome_to_online_shopping"
+        android:textAlignment="center"
+        android:textColor="@color/elevationColor"
+        android:textSize="25sp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lotiView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:lottie_rawRes="@raw/data"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tvwellcome"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lotiView"
+        app:lottie_rawRes="@raw/saledata"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+
+</RelativeLayout>
